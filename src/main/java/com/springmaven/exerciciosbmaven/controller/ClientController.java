@@ -1,6 +1,6 @@
 package com.springmaven.exerciciosbmaven.controller;
 
-import com.springmaven.exerciciosbmaven.model.Client;
+import com.springmaven.exerciciosbmaven.model.entities.Client;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
