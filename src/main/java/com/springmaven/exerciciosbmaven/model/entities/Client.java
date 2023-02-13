@@ -1,4 +1,4 @@
-package com.springmaven.exerciciosbmaven.model;
+package com.springmaven.exerciciosbmaven.model.entities;
 
 public class Client {
 
