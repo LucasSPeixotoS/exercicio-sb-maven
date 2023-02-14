@@ -1,10 +1,10 @@
 package com.springmaven.exerciciosbmaven.controller;
 
-import com.springmaven.exerciciosbmaven.model.entities.Client;
+import com.springmaven.exerciciosbmaven.model.entity.Client;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(path = "/clients")
+@RequestMapping(path = "/client")
 public class ClientController {
 
     @RequestMapping
