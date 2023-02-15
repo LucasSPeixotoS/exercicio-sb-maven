@@ -1,4 +1,4 @@
-# exercicio-spring-boot-maven
+# Exercicio-spring-boot-maven
 
 # Ferramentas utilizadas
 
