@@ -13,11 +13,21 @@ public class Product {
     private int id;
     private String name;
 
+    private double price;
+
+    private double discountPercentage;
+
     public Product() {
     }
 
     public Product(String name) {
         this.name = name;
+    }
+
+    public Product(String name, double price, double discountPercentage) {
+        this.name = name;
+        this.price = price;
+        this.discountPercentage = discountPercentage;
     }
 
     public int getId() {
@@ -34,5 +44,21 @@ public class Product {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getDiscountPercentage() {
+        return discountPercentage;
+    }
+
+    public void setDiscountPercentage(double discountPercentage) {
+        this.discountPercentage = discountPercentage;
     }
 }
