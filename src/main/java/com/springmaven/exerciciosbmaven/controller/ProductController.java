@@ -18,9 +18,9 @@ public class ProductController {
     private ProductRepository productRepository;
 
     @PostMapping
-    public @ResponseBody Product newProduct(@Valid Product product){
+    public @ResponseBody ProductDTO newProduct(@Valid Product product){
         productRepository.save(product);
-        return product;
+        return new ProductDTO(product.getName(), product.getPrice(), product.getDiscountPercentage());
     }
 
     @GetMapping
