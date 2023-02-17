@@ -17,6 +17,10 @@ public class ProductController {
     @Autowired
     private ProductRepository productRepository;
 
+    /*
+    Esse método Post é igual o Put, poderia usar ele passando @RequestMapping(method = {RequestMethod.POST,
+    RequestMethod.Put}) que iria fazer a função do Post quando usar Post e Put quando usar put.
+    */
     @PostMapping
     public @ResponseBody ProductDTO newProduct(@Valid Product product){
         productRepository.save(product);
@@ -37,6 +41,12 @@ public class ProductController {
         return products.stream()
                 .map(product -> new ProductDTO(product.getName(), product.getPrice(), product.getDiscountPercentage()))
                 .collect(Collectors.toList());
+    }
+
+    @PutMapping
+    public Product alterProduct(@Valid Product product){
+        productRepository.save(product);
+        return product;
     }
 
 }
