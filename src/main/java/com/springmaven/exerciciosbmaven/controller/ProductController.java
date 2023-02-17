@@ -49,4 +49,10 @@ public class ProductController {
         return product;
     }
 
+    @DeleteMapping("/{id}")
+    public String deleteProductById(@PathVariable int id){
+        productRepository.deleteById(id);
+        return "Successfully deleted.";
+    }
+
 }
